@@ -8,20 +8,19 @@
     <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
     
     <body style='margin : 0px; overflow: hidden;'>
-        <a-scene embedded arjs='sourceType: webcam;'>
+      <a-scene embedded arjs='sourceType: webcam;'>
 
-            <a-marker-camera type='pattern' url='https://raw.githubusercontent.com/benhov/benhov.github.io/master/cp_shg_ar/wu/assets/qr-code.png'>'></a-marker-camera>
+          <a-marker-camera type='pattern' url='https://raw.githubusercontent.com/benhov/benhov.github.io/master/cp_shg_ar/wu/assets/qr-code.png'>'></a-marker-camera>
 
             <a-assets>
-                <a-asset-item id="wu" src="https://raw.githubusercontent.com/benhov/benhov.github.io/master/cp_shg_ar/assets/wu.dae"></a-asset-item>
-            </a-assets>
+             <a-asset-item id="wu" src="https://raw.githubusercontent.com/benhov/benhov.github.io/master/cp_shg_ar/assets/wu.dae"></a-asset-item>
+           </a-assets>
 
-            <a-entity collada-model=”url(https://raw.githubusercontent.com/benhov/benhov.github.io/master/cp_shg_ar/assets/wu.dae)”>
-            </a-entity>
+            <a-entity collada-model=”#wu”></a-entity>
 
-      </a-marker>
+          </a-marker>
 
-  <a-entity camera>
-  </a-entity>
-  </a-scene>
-</body>
+       <a-entity camera></a-entity>
+      </a-scene>
+    </body>
+</html>
