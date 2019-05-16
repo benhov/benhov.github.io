@@ -16,19 +16,17 @@
             <a-asset-item id="wu" src="https://raw.githubusercontent.com/benhov/benhov.github.io/master/cp_shg_ar/wu/assets/wu.dae"></a-asset-item>
         </a-assets>
 
-        <a-marker type='barcode' value='6'>
+        <a-marker-camera type='barcode' value='6'>
             <a-box position='0 0.5 0' color="yellow"></a-box>
-        </a-marker>
+        </a-marker-camera>
 
-        <a-marker id="wu" type='barcode' value='7'>
+        <a-marker-camera id="wu" type='barcode' value='7'>
             <a-entity
                 collada-model="#wu"
                 scale="2">
             </a-entity>
-        </a-marker>
+        </a-marker-camera>
 
-        <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
-        <a-entity camera></a-entity>
         </a-scene>
     </body>
 </html>
