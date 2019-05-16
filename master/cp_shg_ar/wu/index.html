@@ -10,15 +10,11 @@
     <body style='margin : 0px; overflow: hidden;'>
       <a-scene embedded arjs='sourceType: webcam;'>
 
-          <a-marker-camera type='pattern' url='https://raw.githubusercontent.com/benhov/benhov.github.io/master/cp_shg_ar/wu/assets/qr-code.png'>'></a-marker-camera>
+        <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
 
-            <a-assets>
-             <a-asset-item id="wu" src="https://raw.githubusercontent.com/benhov/benhov.github.io/master/cp_shg_ar/assets/wu.dae"></a-asset-item>
-           </a-assets>
-
-            <a-entity collada-model=”#wu”></a-entity>
-
-          </a-marker>
+          <a-marker-camera type='pattern' url='https://raw.githubusercontent.com/benhov/benhov.github.io/master/cp_shg_ar/wu/assets/qr-code.png''>
+            
+          </a-marker-camera>
 
        <a-entity camera></a-entity>
       </a-scene>
